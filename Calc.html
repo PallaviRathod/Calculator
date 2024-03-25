@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <table id="calcu">
+        <tr>
+            <td colspan="4">
+                <input type="text" id="result">
+            </td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="C" onclick="clearResult()"></td>
+            <td><input type="button" value="AC" onclick="clearAll()"></td>
+            <td><input type="button" value="%" onclick="addPercentage()"></td>
+            <td id="operator"><input type="button" value="/" onclick="addToResult('/')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="7" onclick="addToResult('7')"></td>
+            <td><input type="button" value="8" onclick="addToResult('8')"></td>
+            <td><input type="button" value="9" onclick="addToResult('9')"></td>
+            <td id="operator"><input type="button" value="*" onclick="addToResult('*')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="4" onclick="addToResult('4')"></td>
+            <td><input type="button" value="5" onclick="addToResult('5')"></td>
+            <td><input type="button" value="6" onclick="addToResult('6')"></td>
+            <td id="operator"><input type="button" value="-" onclick="addToResult('-')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="1" onclick="addToResult('1')"></td>
+            <td><input type="button" value="2" onclick="addToResult('2')"></td>
+            <td><input type="button" value="3" onclick="addToResult('3')"></td>
+            <td id="operator"><input type="button" value="+" onclick="addToResult('+')"></td>
+        </tr>
+        
+        <tr>
+            <td><input type="button" value="00" onclick="addToResult('00')"></td>
+            <td><input type="button" value="0" onclick="addToResult('0')"></td>
+            <td><input type="button" value="." onclick="addToResult('.')"></td>
+            <td class="operator"><input type="button" value="=" onclick="calculate()"></td>
+        </tr>
+        
+    </table>
+</body>
+</html>
